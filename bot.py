@@ -33,7 +33,7 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /tagall\n__You can use this command with text what you want to mention others.__\n`Example: /tagall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__."
+  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /tagall\n__You can use this command with text what you want to mention others.__\n`Example: /tagall or @all Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__."
   await event.reply(
     helptext,
     link_preview=False,
