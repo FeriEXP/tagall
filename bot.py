@@ -21,26 +21,26 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**I'm MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__\n\n Follow [TeamUltron](https://github.com/TeamUltron) on Github",
+    "__**I'm MentionAll Bot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__",
     link_preview=False,
     buttons=(
       [
-        Button.url('✨ Channel ✨', 'https://t.me/TheUltronOfficial'),
-        Button.url('🔮 Source 🔮', 'https://github.com/TeamUltron/MentionBot')
+        Button.url('GROUP', 'https://t.me/aphroditesigh'),
+        Button.url('OWNER', 't.me/xflicks')
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /tagall\n__You can use this command with text what you want to mention others.__\n`Example: /tagall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [TeamUltron](https://github.com/TeamUltron) on Github"
+  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /tagall\n__You can use this command with text what you want to mention others.__\n`Example: /tagall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__."
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('✨ Channel ✨', 'https://t.me/TheUltronOfficil'),
-        Button.url('🔮 Source 🔮', 'https://github.com/Teamultron/MentionBot')
+        Button.url('GROUP', 'https://t.me/aphroditesigh'),
+        Button.url('OWNER', 't.me/xflicks')
       ]
     )
   )
