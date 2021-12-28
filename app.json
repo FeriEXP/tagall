@@ -2,6 +2,12 @@
     "name": "MentionBot",
     "description": "A simple mention all for telegram.",
     "env": {
+        "OWNER_USERNAME": {
+            "description": "Enter your telegram username."
+        },
+        "GROUP": {
+            "description": "Enter your group link."
+        },
         "TOKEN": {
             "description": "Enter bot token."
         },
