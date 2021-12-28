@@ -3,10 +3,10 @@
     "description": "A simple mention all for telegram.",
     "env": {
         "OWNER_USERNAME": {
-            "description": "Enter your telegram username."
+            "description": "Enter your telegram username.Example: `t.me/xflicks`"
         },
         "GROUP": {
-            "description": "Enter your group link."
+            "description": "Enter your group link.Example: `t.me/sharinguserbot`"
         },
         "TOKEN": {
             "description": "Enter bot token."
