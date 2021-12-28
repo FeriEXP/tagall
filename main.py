@@ -15,7 +15,9 @@ LOGGER = logging.getLogger(__name__)
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
-client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
+memek = os.environ.get("OWNER_USERNAME")
+peju = os.environ.get("GROUP")
+client = TelegramClient("client", api_id, api_hash).start(bot_token=bot_token)
 spam_chats = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
@@ -25,8 +27,8 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url("GROUP", "https://t.me/aphroditesigh"),
-        Button.url("OWNER", "t.me/xflicks")
+        Button.url("GROUP", f"{peju}"),
+        Button.url("OWNER", f"{memek}")
       ]
     )
   )
@@ -39,8 +41,8 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url("GROUP", "https://t.me/aphroditesigh"),
-        Button.url("OWNER", "t.me/xflicks")
+        Button.url("GROUP", f"{peju}"),
+        Button.url("OWNER", f"{memek}")
       ]
     )
   )
