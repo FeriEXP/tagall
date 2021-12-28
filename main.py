@@ -25,8 +25,8 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('GROUP', 'https://t.me/aphroditesigh'),
-        Button.url('OWNER', 't.me/xflicks')
+        Button.url("GROUP", "https://t.me/aphroditesigh"),
+        Button.url("OWNER", "t.me/xflicks")
       ]
     )
   )
@@ -39,8 +39,8 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('GROUP', 'https://t.me/aphroditesigh'),
-        Button.url('OWNER', 't.me/xflicks')
+        Button.url("GROUP", "https://t.me/aphroditesigh"),
+        Button.url("OWNER", "t.me/xflicks")
       ]
     )
   )
@@ -112,13 +112,13 @@ async def mentionall(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
   if not event.chat_id in spam_chats:
-    return await event.respond('__There is no proccess on going...__')
+    return await event.respond("__There is no proccess on going...__")
   else:
     try:
       spam_chats.remove(event.chat_id)
     except:
       pass
-    return await event.respond('__Stopped.__')
+    return await event.respond("__Stopped Mention.__")
 
 print(">> BOT STARTED <<")
 client.run_until_disconnected()
