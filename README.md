@@ -9,6 +9,6 @@ _**This bot can mention members upto 10,000 in groups and can mention members up
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FeriEXP/tagall)
 
 ### 🎯 Credits and Other
-- [Me](https://github.com/The-tycoon) for this Project ;)
+- [Tycoon](https://github.com/The-tycoon) for this Project ;)
 
 **Do not forget to follow me on Github ✌️**
