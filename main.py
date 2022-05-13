@@ -27,8 +27,7 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url("GROUP", f"{peju}"),
-        Button.url("OWNER", f"{memek}")
+        Button.url("OWNER", f"{Muzzu5}")
       ]
     )
   )
@@ -41,8 +40,7 @@ async def help(event):
     link_preview=False,
     buttons=(
       [
-        Button.url("GROUP", f"{peju}"),
-        Button.url("OWNER", f"{memek}")
+        Button.url("OWNER", f"{muzzu5}")
       ]
     )
   )
